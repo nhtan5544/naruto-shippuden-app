@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="g" cx="42%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="60%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </radialGradient>
+  </defs>
+  <!-- Limbal ring -->
+  <circle cx="100" cy="100" r="99" fill="#0a1520"/>
+  <!-- Iris (pale blue) -->
+  <circle cx="100" cy="100" r="92" fill="url(#g)"/>
+  <!-- Subtle ring -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#93c5fd" stroke-width="3" opacity="0.5"/>
+  <!-- Irregular dark pupil (Jōgan's distinctive mark) -->
+  <ellipse cx="100" cy="100" r="28" fill="#0f172a"/>
+  <!-- Asymmetric teardrop mark (distinctive of Jōgan) -->
+  <path d="M100,72 Q118,80 115,100 Q112,118 100,124 Q90,118 86,100 Q84,80 100,72Z" fill="#1e3a5f" opacity="0.7"/>
+  <!-- Small bright center -->
+  <circle cx="100" cy="100" r="10" fill="#1d4ed8" opacity="0.8"/>
+  <!-- Highlight line (Jōgan has a glowing sclera mark) -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.7"/>
+</svg>

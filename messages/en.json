@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Home",
+    "author": "Author",
+    "villages": "Villages",
+    "characters": "Characters",
+    "dojutsu": "Dojutsu",
+    "openMenu": "Open menu"
+  },
+  "footer": {
+    "tagline": "A comprehensive guide to the world of Naruto Shippuden — a work by Masashi Kishimoto.",
+    "copyright": "© Naruto & Naruto Shippuden are the copyright of Masashi Kishimoto / Shueisha."
+  },
+  "home": {
+    "badge": "Ninja World",
+    "description": "A comprehensive guide to the legendary ninja world — history, characters, hidden villages, and mysterious eye techniques from the masterpiece of Masashi Kishimoto.",
+    "exploreBtn": "Explore Characters",
+    "authorBtn": "About Author",
+    "exploreSection": "Explore",
+    "featuredSection": "Featured Characters",
+    "viewAll": "View all",
+    "quote": "I will never give up! That is my ninja way!",
+    "quoteBy": "Naruto Uzumaki",
+    "sections": {
+      "author": {
+        "title": "Author History",
+        "description": "Explore the life and career of Masashi Kishimoto — the creator of the legendary ninja world.",
+        "badge": "Masashi Kishimoto"
+      },
+      "villages": {
+        "title": "Village History",
+        "description": "From Konohagakure to Amegakure, each ninja village has its own formation history and secrets.",
+        "badge": "7 Villages"
+      },
+      "characters": {
+        "title": "Character Encyclopedia",
+        "description": "Detailed profiles of key characters — from Naruto to Madara, from heroes to villains.",
+        "badge": "12 Characters"
+      },
+      "dojutsu": {
+        "title": "Legendary Eye Techniques",
+        "description": "A collection of clan Dojutsu — Sharingan, Byakugan, Rinnegan and other mysterious eyes.",
+        "badge": "7 Dojutsu"
+      }
+    },
+    "featured": {
+      "naruto": { "role": "Seventh Hokage", "tag": "Protagonist" },
+      "sasuke": { "role": "Shadow Protector", "tag": "Uchiha" },
+      "itachi": { "role": "ANBU / Akatsuki", "tag": "Tragedy" },
+      "madara": { "role": "Legend", "tag": "Villain" }
+    }
+  },
+  "author": {
+    "badge": "Author",
+    "birthdate": "Date of Birth",
+    "birthplace": "Birthplace",
+    "biography": "Biography",
+    "works": "Works",
+    "awards": "Awards"
+  },
+  "villages": {
+    "badge": "Ninja Villages",
+    "title": "Village History",
+    "description": "Explore the founding history, culture, and legendary ninjas of each village in the world of Naruto Shippuden.",
+    "notableNinja": "Notable Ninja:",
+    "others": "+{count} more"
+  },
+  "villageDetail": {
+    "back": "Villages",
+    "country": "Country",
+    "leader": "Leader",
+    "ninjaCount": "{count} ninja",
+    "notableNinjaLabel": "Notable Ninja",
+    "history": "History",
+    "notableNinja": "Notable Ninja"
+  },
+  "characters": {
+    "badge": "Characters",
+    "title": "Character Encyclopedia",
+    "description": "Detailed profiles of key characters in Naruto Shippuden — from heroes to villains, from masters to students.",
+    "status": {
+      "alive": "Alive",
+      "dead": "Deceased",
+      "unknown": "Unknown"
+    }
+  },
+  "characterDetail": {
+    "back": "Characters",
+    "village": "Village",
+    "rank": "Rank",
+    "clan": "Clan",
+    "history": "History",
+    "abilities": "Abilities",
+    "exploreMore": "Explore more characters in the world of Naruto.",
+    "viewAll": "View all characters"
+  },
+  "dojutsu": {
+    "badge": "Dojutsu",
+    "title": "Legendary Eye Techniques",
+    "description": "Dojutsu — special eyes — are the most powerful Kekkei Genkai in the ninja world. Each type carries unique power and a distinct clan history.",
+    "tabs": {
+      "all": "All",
+      "legendary": "Legendary",
+      "rare": "Rare"
+    },
+    "tier": {
+      "common": "Common",
+      "rare": "Rare",
+      "legendary": "Legendary"
+    },
+    "history": "History",
+    "abilities": "Abilities",
+    "users": "Users"
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="g" cx="42%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </radialGradient>
+  </defs>
+  <!-- Limbal ring -->
+  <circle cx="100" cy="100" r="99" fill="#08000f"/>
+  <!-- Iris -->
+  <circle cx="100" cy="100" r="92" fill="url(#g)"/>
+  <!-- Ripple rings (concentric, like water surface) -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#4c1d95" stroke-width="7"/>
+  <circle cx="100" cy="100" r="66" fill="none" stroke="#4c1d95" stroke-width="7"/>
+  <circle cx="100" cy="100" r="52" fill="none" stroke="#4c1d95" stroke-width="7"/>
+  <circle cx="100" cy="100" r="38" fill="none" stroke="#4c1d95" stroke-width="7"/>
+  <circle cx="100" cy="100" r="24" fill="none" stroke="#4c1d95" stroke-width="7"/>
+  <!-- Pupil -->
+  <circle cx="100" cy="100" r="10" fill="#1e0040"/>
+  <!-- Subtle highlight -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.5"/>
+</svg>

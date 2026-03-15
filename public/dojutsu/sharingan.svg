@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="g" cx="42%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#ff3333"/>
+      <stop offset="100%" stop-color="#880000"/>
+    </radialGradient>
+  </defs>
+  <!-- Limbal ring -->
+  <circle cx="100" cy="100" r="99" fill="#0d0000"/>
+  <!-- Iris -->
+  <circle cx="100" cy="100" r="92" fill="url(#g)"/>
+  <!-- Inner ring -->
+  <circle cx="100" cy="100" r="62" fill="#6b0000"/>
+  <!-- Pupil -->
+  <circle cx="100" cy="100" r="28" fill="#000"/>
+  <!-- Tomoe 1 -->
+  <g transform="rotate(0 100 100)">
+    <circle cx="100" cy="66" r="10" fill="#000"/>
+    <path d="M110,66 Q126,83 112,93 Q102,89 100,80" stroke="#000" stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Tomoe 2 -->
+  <g transform="rotate(120 100 100)">
+    <circle cx="100" cy="66" r="10" fill="#000"/>
+    <path d="M110,66 Q126,83 112,93 Q102,89 100,80" stroke="#000" stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Tomoe 3 -->
+  <g transform="rotate(240 100 100)">
+    <circle cx="100" cy="66" r="10" fill="#000"/>
+    <path d="M110,66 Q126,83 112,93 Q102,89 100,80" stroke="#000" stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Highlight ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#ff6666" stroke-width="1.5" opacity="0.5"/>
+</svg>

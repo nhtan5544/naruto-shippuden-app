@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "author": "Tác Giả",
+    "villages": "Các Làng",
+    "characters": "Nhân Vật",
+    "dojutsu": "Con Mắt",
+    "openMenu": "Mở menu"
+  },
+  "footer": {
+    "tagline": "Tổng hợp thông tin về thế giới Naruto Shippuden — Tác phẩm của Masashi Kishimoto.",
+    "copyright": "© Naruto & Naruto Shippuden là bản quyền của Masashi Kishimoto / Shueisha."
+  },
+  "home": {
+    "badge": "Thế giới Ninja",
+    "description": "Tổng hợp đầy đủ về thế giới ninja huyền thoại — lịch sử, nhân vật, các làng ẩn và những con mắt bí ẩn trong tác phẩm của Masashi Kishimoto.",
+    "exploreBtn": "Khám phá nhân vật",
+    "authorBtn": "Về tác giả",
+    "exploreSection": "Khám Phá",
+    "featuredSection": "Nhân Vật Nổi Bật",
+    "viewAll": "Xem tất cả",
+    "quote": "Tôi sẽ không bỏ cuộc! Đó là con đường ninja của tôi!",
+    "quoteBy": "Naruto Uzumaki",
+    "sections": {
+      "author": {
+        "title": "Lịch Sử Tác Giả",
+        "description": "Khám phá cuộc đời và sự nghiệp của Masashi Kishimoto — người đã tạo ra thế giới ninja huyền thoại.",
+        "badge": "Masashi Kishimoto"
+      },
+      "villages": {
+        "title": "Lịch Sử Các Làng",
+        "description": "Từ Konohagakure đến Amegakure, mỗi ngôi làng ninja có lịch sử hình thành và những bí mật riêng.",
+        "badge": "7 Làng"
+      },
+      "characters": {
+        "title": "Tổng Hợp Nhân Vật",
+        "description": "Hồ sơ chi tiết về các nhân vật quan trọng — từ Naruto đến Madara, từ anh hùng đến phản diện.",
+        "badge": "12 Nhân vật"
+      },
+      "dojutsu": {
+        "title": "Các Con Mắt Huyền Thoại",
+        "description": "Tổng hợp các Dojutsu của các gia tộc — Sharingan, Byakugan, Rinnegan và những con mắt bí ẩn khác.",
+        "badge": "7 Dojutsu"
+      }
+    },
+    "featured": {
+      "naruto": { "role": "Hokage đệ thất", "tag": "Nhân vật chính" },
+      "sasuke": { "role": "Bảo vệ bóng tối", "tag": "Uchiha" },
+      "itachi": { "role": "ANBU / Akatsuki", "tag": "Bi kịch" },
+      "madara": { "role": "Huyền thoại", "tag": "Phản diện" }
+    }
+  },
+  "author": {
+    "badge": "Tác Giả",
+    "birthdate": "Ngày sinh",
+    "birthplace": "Quê quán",
+    "biography": "Tiểu Sử",
+    "works": "Tác Phẩm",
+    "awards": "Giải Thưởng"
+  },
+  "villages": {
+    "badge": "Các Làng Ninja",
+    "title": "Lịch Sử Các Làng",
+    "description": "Khám phá lịch sử hình thành, văn hóa và những ninja huyền thoại của từng ngôi làng trong thế giới Naruto Shippuden.",
+    "notableNinja": "Ninja nổi bật:",
+    "others": "+{count} khác"
+  },
+  "villageDetail": {
+    "back": "Các Làng",
+    "country": "Đất nước",
+    "leader": "Lãnh đạo",
+    "ninjaCount": "{count} ninja",
+    "notableNinjaLabel": "Ninja nổi bật",
+    "history": "Lịch Sử",
+    "notableNinja": "Ninja Nổi Bật"
+  },
+  "characters": {
+    "badge": "Nhân Vật",
+    "title": "Tổng Hợp Nhân Vật",
+    "description": "Hồ sơ chi tiết về các nhân vật quan trọng trong Naruto Shippuden — từ anh hùng đến phản diện, từ thầy đến học trò.",
+    "status": {
+      "alive": "Còn sống",
+      "dead": "Đã mất",
+      "unknown": "Không rõ"
+    }
+  },
+  "characterDetail": {
+    "back": "Nhân Vật",
+    "village": "Làng",
+    "rank": "Cấp bậc",
+    "clan": "Gia tộc",
+    "history": "Lịch Sử",
+    "abilities": "Năng Lực",
+    "exploreMore": "Khám phá thêm nhân vật khác trong thế giới Naruto.",
+    "viewAll": "Xem tất cả nhân vật"
+  },
+  "dojutsu": {
+    "badge": "Dojutsu",
+    "title": "Các Con Mắt Huyền Thoại",
+    "description": "Dojutsu — những con mắt đặc biệt — là Kekkei Genkai mạnh mẽ nhất trong thế giới ninja. Mỗi loại mắt mang sức mạnh độc nhất và lịch sử riêng biệt của từng gia tộc.",
+    "tabs": {
+      "all": "Tất cả",
+      "legendary": "Huyền thoại",
+      "rare": "Hiếm"
+    },
+    "tier": {
+      "common": "Phổ biến",
+      "rare": "Hiếm",
+      "legendary": "Huyền thoại"
+    },
+    "history": "Lịch Sử",
+    "abilities": "Năng Lực",
+    "users": "Người Sử Dụng"
+  }
+}

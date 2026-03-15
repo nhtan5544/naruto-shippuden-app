@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="g" cx="40%" cy="36%" r="60%">
+      <stop offset="0%" stop-color="#cc1111"/>
+      <stop offset="100%" stop-color="#3d0000"/>
+    </radialGradient>
+  </defs>
+  <!-- Limbal ring -->
+  <circle cx="100" cy="100" r="99" fill="#080000"/>
+  <!-- Iris -->
+  <circle cx="100" cy="100" r="92" fill="url(#g)"/>
+  <!-- Pinwheel blades (Itachi style: 3 curved blade shapes) -->
+  <g transform="rotate(0 100 100)">
+    <ellipse cx="100" cy="62" rx="14" ry="30" fill="#200000" opacity="0.9"/>
+    <ellipse cx="100" cy="62" rx="8" ry="22" fill="#000" opacity="0.85"/>
+  </g>
+  <g transform="rotate(120 100 100)">
+    <ellipse cx="100" cy="62" rx="14" ry="30" fill="#200000" opacity="0.9"/>
+    <ellipse cx="100" cy="62" rx="8" ry="22" fill="#000" opacity="0.85"/>
+  </g>
+  <g transform="rotate(240 100 100)">
+    <ellipse cx="100" cy="62" rx="14" ry="30" fill="#200000" opacity="0.9"/>
+    <ellipse cx="100" cy="62" rx="8" ry="22" fill="#000" opacity="0.85"/>
+  </g>
+  <!-- Outer connecting ring -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#000" stroke-width="6"/>
+  <!-- Inner ring -->
+  <circle cx="100" cy="100" r="38" fill="#2a0000"/>
+  <!-- Pupil -->
+  <circle cx="100" cy="100" r="20" fill="#000"/>
+  <!-- Highlight -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#ff4444" stroke-width="1.5" opacity="0.4"/>
+</svg>
