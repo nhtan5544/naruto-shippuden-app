@@ -23,6 +23,7 @@ export default async function DoujutsuPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("dojutsu");
+  const l = locale as "vi" | "en";
 
   const tierConfig = {
     common: { label: t("tier.common"), class: "text-slate-500 border-slate-500/30 bg-slate-500/10" },
@@ -88,11 +89,11 @@ export default async function DoujutsuPage({
                           <Badge variant="outline" className={tier.class}>
                             {tier.label}
                           </Badge>
-                          <Badge variant="secondary">{dojutsu.clan}</Badge>
+                          <Badge variant="secondary">{dojutsu.clan[l]}</Badge>
                         </div>
                       </div>
                       <CardDescription className="leading-relaxed text-sm">
-                        {dojutsu.description}
+                        {dojutsu.description[l]}
                       </CardDescription>
                     </CardHeader>
 
@@ -100,7 +101,7 @@ export default async function DoujutsuPage({
                       {/* History */}
                       <div className="space-y-2">
                         <h3 className="text-sm font-semibold text-foreground">{t("history")}</h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{dojutsu.history}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{dojutsu.history[l]}</p>
                       </div>
 
                       <Separator />
@@ -114,12 +115,12 @@ export default async function DoujutsuPage({
                         <div className="grid gap-2 sm:grid-cols-2">
                           {dojutsu.abilities.map((ability) => (
                             <div
-                              key={ability.name}
+                              key={ability.name.vi}
                               className="rounded-lg border border-border bg-accent/30 p-3 space-y-1"
                             >
-                              <p className="text-sm font-medium">{ability.name}</p>
+                              <p className="text-sm font-medium">{ability.name[l]}</p>
                               <p className="text-xs text-muted-foreground leading-relaxed">
-                                {ability.description}
+                                {ability.description[l]}
                               </p>
                             </div>
                           ))}
@@ -134,8 +135,8 @@ export default async function DoujutsuPage({
                         </div>
                         <div className="flex flex-wrap gap-2">
                           {dojutsu.users.map((user) => (
-                            <Badge key={user} variant="secondary" className="text-xs">
-                              {user}
+                            <Badge key={user.vi} variant="secondary" className="text-xs">
+                              {user[l]}
                             </Badge>
                           ))}
                         </div>

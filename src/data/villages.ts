@@ -3,16 +3,20 @@ import type { Village } from "./types";
 export const villages: Village[] = [
   {
     id: "konoha",
-    name: "Làng Lá Ẩn — Konohagakure",
+    name: { vi: "Làng Lá Ẩn — Konohagakure", en: "Hidden Leaf Village — Konohagakure" },
     nameJP: "木ノ葉隠れの里",
     slug: "konohagakure",
-    country: "Đất nước Lửa",
+    country: { vi: "Đất nước Lửa", en: "Land of Fire" },
     kage: "Hokage",
-    symbol: "Lá cây",
-    description:
-      "Konohagakure là một trong Năm Đại Làng Nhẫn và là ngôi làng mạnh nhất trong thế giới Naruto. Đây là quê hương của nhân vật chính Naruto Uzumaki.",
-    history:
-      "Konohagakure được thành lập bởi hai shinobi huyền thoại là Hashirama Senju và Madara Uchiha sau khi họ đồng ý hợp nhất hai gia tộc Senju và Uchiha để chấm dứt những cuộc chiến không hồi kết. Hashirama trở thành Hokage đầu tiên, đặt nền móng cho làng trở thành biểu tượng của hòa bình. Tuy nhiên, Madara không hài lòng với hướng đi của làng và rời đi, tạo ra kẻ thù lớn nhất của Konoha. Qua nhiều thế hệ Hokage, Konoha đã chống chọi với nhiều mối đe dọa: cuộc tấn công của Chín Vĩ Hồ Ly do Madara điều khiển, Thế chiến Ninja lần 2 và 3, sự xâm lược của Ngôi làng Âm Thanh và Làng Cát trong kỳ thi Chunin, và cuộc tấn công của Pain. Mỗi thử thách đều định hình tinh thần bất khuất của ngôi làng.",
+    symbol: { vi: "Lá cây", en: "Leaf" },
+    description: {
+      vi: "Konohagakure là một trong Năm Đại Làng Nhẫn và là ngôi làng mạnh nhất trong thế giới Naruto. Đây là quê hương của nhân vật chính Naruto Uzumaki.",
+      en: "Konohagakure is one of the Five Great Shinobi Villages and the most powerful village in the Naruto world. It is the home of the main protagonist, Naruto Uzumaki.",
+    },
+    history: {
+      vi: "Konohagakure được thành lập bởi hai shinobi huyền thoại là Hashirama Senju và Madara Uchiha sau khi họ đồng ý hợp nhất hai gia tộc Senju và Uchiha để chấm dứt những cuộc chiến không hồi kết. Hashirama trở thành Hokage đầu tiên, đặt nền móng cho làng trở thành biểu tượng của hòa bình. Tuy nhiên, Madara không hài lòng với hướng đi của làng và rời đi, tạo ra kẻ thù lớn nhất của Konoha. Qua nhiều thế hệ Hokage, Konoha đã chống chọi với nhiều mối đe dọa: cuộc tấn công của Chín Vĩ Hồ Ly do Madara điều khiển, Thế chiến Ninja lần 2 và 3, sự xâm lược của Ngôi làng Âm Thanh và Làng Cát trong kỳ thi Chunin, và cuộc tấn công của Pain. Mỗi thử thách đều định hình tinh thần bất khuất của ngôi làng.",
+      en: "Konohagakure was founded by two legendary shinobi, Hashirama Senju and Madara Uchiha, after they agreed to unite the Senju and Uchiha clans to end the endless wars. Hashirama became the First Hokage, laying the foundation for the village to become a symbol of peace. However, Madara grew dissatisfied with the village's direction and left, becoming Konoha's greatest enemy. Through many generations of Hokage, Konoha has weathered numerous threats: the Nine-Tails attack orchestrated by Madara, the Second and Third Shinobi World Wars, the invasion by the Sound and Sand villages during the Chunin Exams, and Pain's assault. Each trial has shaped the village's indomitable spirit.",
+    },
     notableNinja: [
       "Naruto Uzumaki",
       "Sasuke Uchiha",
@@ -25,96 +29,120 @@ export const villages: Village[] = [
       "Rock Lee",
       "Neji Hyuga",
     ],
-    tags: ["Ngũ Đại Làng", "Đất Lửa", "Hokage"],
+    tags: [{ vi: "Ngũ Đại Làng", en: "Five Great Villages" }, { vi: "Đất Lửa", en: "Land of Fire" }, { vi: "Hokage", en: "Hokage" }],
   },
   {
     id: "suna",
-    name: "Làng Cát Ẩn — Sunagakure",
+    name: { vi: "Làng Cát Ẩn — Sunagakure", en: "Hidden Sand Village — Sunagakure" },
     nameJP: "砂隠れの里",
     slug: "sunagakure",
-    country: "Đất nước Gió",
+    country: { vi: "Đất nước Gió", en: "Land of Wind" },
     kage: "Kazekage",
-    symbol: "Hộp sọ cát",
-    description:
-      "Sunagakure nằm giữa sa mạc khắc nghiệt của Đất nước Gió. Là ngôi làng chuyên về ninja cát và con rối, quê hương của Gaara — người sau này trở thành Kazekage đệ ngũ.",
-    history:
-      "Sunagakure nổi tiếng với kỹ thuật Ninjutsu cát và nghệ thuật chiến đấu bằng con rối. Làng đã trải qua giai đoạn khủng hoảng khi Đất nước Gió cắt giảm ngân sách quân sự, buộc làng hợp tác với Orochimaru trong âm mưu xâm lược Konoha — một sai lầm mà Kazekage đệ tứ Rasa phải trả giá bằng mạng sống. Sau sự kiện đó, Gaara — người từng bị cả làng sợ hãi và khinh thường — đã vươn lên trở thành Kazekage đệ ngũ được kính trọng, định nghĩa lại tinh thần của ngôi làng.",
+    symbol: { vi: "Hộp sọ cát", en: "Sand Skull" },
+    description: {
+      vi: "Sunagakure nằm giữa sa mạc khắc nghiệt của Đất nước Gió. Là ngôi làng chuyên về ninja cát và con rối, quê hương của Gaara — người sau này trở thành Kazekage đệ ngũ.",
+      en: "Sunagakure is located in the harsh desert of the Land of Wind. Known for sand-based ninjutsu and puppet warfare, it is the home of Gaara — who later became the Fifth Kazekage.",
+    },
+    history: {
+      vi: "Sunagakure nổi tiếng với kỹ thuật Ninjutsu cát và nghệ thuật chiến đấu bằng con rối. Làng đã trải qua giai đoạn khủng hoảng khi Đất nước Gió cắt giảm ngân sách quân sự, buộc làng hợp tác với Orochimaru trong âm mưu xâm lược Konoha — một sai lầm mà Kazekage đệ tứ Rasa phải trả giá bằng mạng sống. Sau sự kiện đó, Gaara — người từng bị cả làng sợ hãi và khinh thường — đã vươn lên trở thành Kazekage đệ ngũ được kính trọng, định nghĩa lại tinh thần của ngôi làng.",
+      en: "Sunagakure is renowned for its sand ninjutsu and puppet combat techniques. The village endured a crisis when the Land of Wind cut its military budget, forcing an ill-fated alliance with Orochimaru to invade Konoha — a mistake the Fourth Kazekage Rasa paid for with his life. After these events, Gaara — once feared and despised by the entire village — rose to become the respected Fifth Kazekage, redefining the spirit of the village.",
+    },
     notableNinja: ["Gaara", "Temari", "Kankuro", "Chiyo", "Sasori", "Rasa"],
-    tags: ["Ngũ Đại Làng", "Đất Gió", "Kazekage", "Sa mạc"],
+    tags: [{ vi: "Ngũ Đại Làng", en: "Five Great Villages" }, { vi: "Đất Gió", en: "Land of Wind" }, { vi: "Kazekage", en: "Kazekage" }, { vi: "Sa mạc", en: "Desert" }],
   },
   {
     id: "kiri",
-    name: "Làng Sương Ẩn — Kirigakure",
+    name: { vi: "Làng Sương Ẩn — Kirigakure", en: "Hidden Mist Village — Kirigakure" },
     nameJP: "霧隠れの里",
     slug: "kirigakure",
-    country: "Đất nước Nước",
+    country: { vi: "Đất nước Nước", en: "Land of Water" },
     kage: "Mizukage",
-    symbol: "Sóng nước",
-    description:
-      "Kirigakure, mệnh danh là 'Làng của Sát Nhân', nổi tiếng với những ninja tàn nhẫn và kỳ thi tốt nghiệp khét tiếng — nơi học viên phải giết nhau để qua môn.",
-    history:
-      "Kirigakure từng trải qua một thời kỳ đen tối dưới sự cai trị của Mizukage đệ tứ Yagura, người bị Obito Uchiha điều khiển bí mật. Trong giai đoạn này, làng đàn áp và tàn sát những người mang Kekkei Genkai. Nhiều người sở hữu năng lực đặc biệt bị buộc phải trốn chạy hoặc bị tiêu diệt. Zabuza Momochi và Haku là những nạn nhân của thời kỳ đó. Sau khi Yagura mất, làng dần hồi phục dưới sự lãnh đạo của Mizukage đệ ngũ Mei Terumi, người chủ trương cởi mở và hòa giải.",
+    symbol: { vi: "Sóng nước", en: "Water Wave" },
+    description: {
+      vi: "Kirigakure, mệnh danh là 'Làng của Sát Nhân', nổi tiếng với những ninja tàn nhẫn và kỳ thi tốt nghiệp khét tiếng — nơi học viên phải giết nhau để qua môn.",
+      en: "Kirigakure, known as the 'Village of Bloody Mist,' is infamous for its ruthless ninja and its notorious graduation exam — where students were required to kill each other to pass.",
+    },
+    history: {
+      vi: "Kirigakure từng trải qua một thời kỳ đen tối dưới sự cai trị của Mizukage đệ tứ Yagura, người bị Obito Uchiha điều khiển bí mật. Trong giai đoạn này, làng đàn áp và tàn sát những người mang Kekkei Genkai. Nhiều người sở hữu năng lực đặc biệt bị buộc phải trốn chạy hoặc bị tiêu diệt. Zabuza Momochi và Haku là những nạn nhân của thời kỳ đó. Sau khi Yagura mất, làng dần hồi phục dưới sự lãnh đạo của Mizukage đệ ngũ Mei Terumi, người chủ trương cởi mở và hòa giải.",
+      en: "Kirigakure endured a dark era under the rule of the Fourth Mizukage Yagura, who was secretly being controlled by Obito Uchiha. During this period, the village persecuted and massacred those with Kekkei Genkai abilities. Many gifted individuals were forced to flee or were eliminated. Zabuza Momochi and Haku were among the victims of that era. After Yagura's death, the village gradually recovered under the leadership of the Fifth Mizukage Mei Terumi, who championed openness and reconciliation.",
+    },
     notableNinja: ["Kisame Hoshigaki", "Zabuza Momochi", "Haku", "Mei Terumi", "Suigetsu Hozuki"],
-    tags: ["Ngũ Đại Làng", "Đất Nước", "Mizukage", "Bảy Kiếm Thủ Sương"],
+    tags: [{ vi: "Ngũ Đại Làng", en: "Five Great Villages" }, { vi: "Đất Nước", en: "Land of Water" }, { vi: "Mizukage", en: "Mizukage" }, { vi: "Bảy Kiếm Thủ Sương", en: "Seven Swordsmen of the Mist" }],
   },
   {
     id: "kumo",
-    name: "Làng Mây Ẩn — Kumogakure",
+    name: { vi: "Làng Mây Ẩn — Kumogakure", en: "Hidden Cloud Village — Kumogakure" },
     nameJP: "雲隠れの里",
     slug: "kumogakure",
-    country: "Đất nước Sét",
+    country: { vi: "Đất nước Sét", en: "Land of Lightning" },
     kage: "Raikage",
-    symbol: "Biểu tượng mây",
-    description:
-      "Kumogakure nằm trên đỉnh núi cao phủ mây của Đất nước Sét. Làng nổi tiếng với sức mạnh thể chất vượt trội và kỹ thuật sử dụng Chakra Sét.",
-    history:
-      "Kumogakure được biết đến qua những xung đột lịch sử với Konoha, đặc biệt là vụ bắt cóc Hinata Hyuga để đánh cắp Byakugan — vụ việc được giải quyết bởi Hiashi Hyuga khi ông hạ sát đặc sứ Kumo. Làng cũng là nơi nuôi dưỡng Killer Bee — Jinchuriki của Bát Vĩ và người thầy của A. Raikage đệ tứ A là một trong những Kage mạnh nhất, đã dẫn dắt Kumogakure trong Thế chiến Ninja đệ tứ với vai trò Tổng tư lệnh Liên minh.",
+    symbol: { vi: "Biểu tượng mây", en: "Cloud Symbol" },
+    description: {
+      vi: "Kumogakure nằm trên đỉnh núi cao phủ mây của Đất nước Sét. Làng nổi tiếng với sức mạnh thể chất vượt trội và kỹ thuật sử dụng Chakra Sét.",
+      en: "Kumogakure is situated atop the cloud-covered mountains of the Land of Lightning. The village is renowned for its exceptional physical strength and mastery of Lightning Release chakra.",
+    },
+    history: {
+      vi: "Kumogakure được biết đến qua những xung đột lịch sử với Konoha, đặc biệt là vụ bắt cóc Hinata Hyuga để đánh cắp Byakugan — vụ việc được giải quyết bởi Hiashi Hyuga khi ông hạ sát đặc sứ Kumo. Làng cũng là nơi nuôi dưỡng Killer Bee — Jinchuriki của Bát Vĩ và người thầy của A. Raikage đệ tứ A là một trong những Kage mạnh nhất, đã dẫn dắt Kumogakure trong Thế chiến Ninja đệ tứ với vai trò Tổng tư lệnh Liên minh.",
+      en: "Kumogakure is known for its historical conflicts with Konoha, most notably the attempted kidnapping of Hinata Hyuga to steal the Byakugan — an incident resolved by Hiashi Hyuga when he killed the Kumo envoy. The village is also the home of Killer Bee, the Jinchuriki of the Eight-Tails and mentor to A. The Fourth Raikage A is one of the most powerful Kage, having led Kumogakure and served as Supreme Commander of the Allied Shinobi Forces during the Fourth Shinobi World War.",
+    },
     notableNinja: ["A (Raikage đệ tứ)", "Killer Bee", "Darui", "C", "Samui"],
-    tags: ["Ngũ Đại Làng", "Đất Sét", "Raikage", "Jinchuriki"],
+    tags: [{ vi: "Ngũ Đại Làng", en: "Five Great Villages" }, { vi: "Đất Sét", en: "Land of Lightning" }, { vi: "Raikage", en: "Raikage" }, { vi: "Jinchuriki", en: "Jinchuriki" }],
   },
   {
     id: "iwa",
-    name: "Làng Đá Ẩn — Iwagakure",
+    name: { vi: "Làng Đá Ẩn — Iwagakure", en: "Hidden Stone Village — Iwagakure" },
     nameJP: "岩隠れの里",
     slug: "iwagakure",
-    country: "Đất nước Đất",
+    country: { vi: "Đất nước Đất", en: "Land of Earth" },
     kage: "Tsuchikage",
-    symbol: "Biểu tượng đá",
-    description:
-      "Iwagakure nằm trong lòng núi đá của Đất nước Đất. Làng nổi tiếng với Jinton (Phóng thể — Dust Release) và những ninja có tinh thần chiến đấu kiên cường như đá.",
-    history:
-      "Iwagakure từng là kẻ thù không đội trời chung của Konoha, đặc biệt trong Thế chiến Ninja đệ ba khi Minato Namikaze — Hoàng Sắc Chớp — một mình đánh bại hàng nghìn ninja Iwa, khiến Tsuchikage Onoki phải ký hòa ước. Tsuchikage đệ tam Onoki là một trong những Kage lâu đời nhất, người từng được đào tạo bởi Madara Uchiha gián tiếp và đã sống đủ lâu để tham chiến trong Thế chiến Ninja đệ tứ dù tuổi cao.",
+    symbol: { vi: "Biểu tượng đá", en: "Stone Symbol" },
+    description: {
+      vi: "Iwagakure nằm trong lòng núi đá của Đất nước Đất. Làng nổi tiếng với Jinton (Phóng thể — Dust Release) và những ninja có tinh thần chiến đấu kiên cường như đá.",
+      en: "Iwagakure is nestled within the rocky mountains of the Land of Earth. The village is renowned for Dust Release (Jinton) and its ninja who possess a fighting spirit as unyielding as stone.",
+    },
+    history: {
+      vi: "Iwagakure từng là kẻ thù không đội trời chung của Konoha, đặc biệt trong Thế chiến Ninja đệ ba khi Minato Namikaze — Hoàng Sắc Chớp — một mình đánh bại hàng nghìn ninja Iwa, khiến Tsuchikage Onoki phải ký hòa ước. Tsuchikage đệ tam Onoki là một trong những Kage lâu đời nhất, người từng được đào tạo bởi Madara Uchiha gián tiếp và đã sống đủ lâu để tham chiến trong Thế chiến Ninja đệ tứ dù tuổi cao.",
+      en: "Iwagakure was once a bitter enemy of Konoha, particularly during the Third Shinobi World War when Minato Namikaze — the Yellow Flash — single-handedly defeated thousands of Iwa ninja, forcing Tsuchikage Onoki to sign a peace treaty. The Third Tsuchikage Onoki is one of the longest-serving Kage, a ninja who was indirectly trained under Madara Uchiha's legacy and lived long enough to fight in the Fourth Shinobi World War despite his advanced age.",
+    },
     notableNinja: ["Onoki (Tsuchikage đệ tam)", "Kitsuchi", "Han", "Roshi", "Deidara"],
-    tags: ["Ngũ Đại Làng", "Đất Đất", "Tsuchikage", "Jinton"],
+    tags: [{ vi: "Ngũ Đại Làng", en: "Five Great Villages" }, { vi: "Đất Đất", en: "Land of Earth" }, { vi: "Tsuchikage", en: "Tsuchikage" }, { vi: "Jinton", en: "Dust Release" }],
   },
   {
     id: "ame",
-    name: "Làng Mưa Ẩn — Amegakure",
+    name: { vi: "Làng Mưa Ẩn — Amegakure", en: "Hidden Rain Village — Amegakure" },
     nameJP: "雨隠れの里",
     slug: "amegakure",
-    country: "Đất nước Mưa",
+    country: { vi: "Đất nước Mưa", en: "Land of Rain" },
     kage: "Không chính thức",
-    symbol: "Giọt mưa",
-    description:
-      "Amegakure là một làng nhỏ nhưng bí ẩn, nằm giữa những cơn mưa dai dẳng. Đây là nơi Pain và Konan xây dựng đế chế của họ với tham vọng mang lại hòa bình bằng nỗi đau.",
-    history:
-      "Amegakure là chiến trường của nhiều cuộc xung đột giữa các làng lớn. Nagato, Konan và Yahiko — ba trẻ mồ côi lớn lên trong chiến tranh tại đây — được Jiraiya dạy Ninjutsu với hy vọng họ sẽ trở thành những sứ giả hòa bình. Sau cái chết bi thảm của Yahiko, Nagato trở thành Pain và nắm quyền kiểm soát Amegakure với bàn tay sắt, biến nơi đây thành căn cứ của Akatsuki. Ngôi làng trở thành biểu tượng của nỗi đau chiến tranh và sự tìm kiếm hòa bình theo cách cực đoan.",
+    symbol: { vi: "Giọt mưa", en: "Rain Drop" },
+    description: {
+      vi: "Amegakure là một làng nhỏ nhưng bí ẩn, nằm giữa những cơn mưa dai dẳng. Đây là nơi Pain và Konan xây dựng đế chế của họ với tham vọng mang lại hòa bình bằng nỗi đau.",
+      en: "Amegakure is a small but mysterious village situated amid perpetual rainfall. It is where Pain and Konan built their empire with the ambition of achieving peace through pain.",
+    },
+    history: {
+      vi: "Amegakure là chiến trường của nhiều cuộc xung đột giữa các làng lớn. Nagato, Konan và Yahiko — ba trẻ mồ côi lớn lên trong chiến tranh tại đây — được Jiraiya dạy Ninjutsu với hy vọng họ sẽ trở thành những sứ giả hòa bình. Sau cái chết bi thảm của Yahiko, Nagato trở thành Pain và nắm quyền kiểm soát Amegakure với bàn tay sắt, biến nơi đây thành căn cứ của Akatsuki. Ngôi làng trở thành biểu tượng của nỗi đau chiến tranh và sự tìm kiếm hòa bình theo cách cực đoan.",
+      en: "Amegakure was a battlefield for many conflicts between the great villages. Nagato, Konan, and Yahiko — three war orphans who grew up here — were taught ninjutsu by Jiraiya in the hope they would become messengers of peace. After Yahiko's tragic death, Nagato became Pain and seized control of Amegakure with an iron grip, transforming it into Akatsuki's base of operations. The village became a symbol of the suffering of war and the extreme pursuit of peace.",
+    },
     notableNinja: ["Pain (Nagato)", "Konan", "Yahiko"],
-    tags: ["Làng Nhỏ", "Akatsuki", "Đất Mưa"],
+    tags: [{ vi: "Làng Nhỏ", en: "Minor Village" }, { vi: "Akatsuki", en: "Akatsuki" }, { vi: "Đất Mưa", en: "Land of Rain" }],
   },
   {
     id: "oto",
-    name: "Làng Âm Thanh Ẩn — Otogakure",
+    name: { vi: "Làng Âm Thanh Ẩn — Otogakure", en: "Hidden Sound Village — Otogakure" },
     nameJP: "音隠れの里",
     slug: "otogakure",
-    country: "Đất nước Âm Thanh",
+    country: { vi: "Đất nước Âm Thanh", en: "Land of Sound" },
     kage: "Orochimaru",
-    symbol: "Âm ký",
-    description:
-      "Otogakure là ngôi làng do Orochimaru thành lập sau khi rời Konoha. Ẩn náu trong nhiều hang động bí mật, đây là nơi Orochimaru thực hiện những thí nghiệm tàn bạo để truy cầu sự bất tử.",
-    history:
-      "Otogakure không phải là ngôi làng theo nghĩa truyền thống — nó là tổ chức do Orochimaru xây dựng với mục đích thu thập ninja mạnh cho thí nghiệm và chuẩn bị lực lượng xâm lược Konoha. Orochimaru đã chiêu mộ những cá nhân có tài năng đặc biệt bằng lời hứa về sức mạnh, trong đó có Kimimaro và nhóm Tứ Thanh Âm. Sasuke Uchiha cũng từng đến đây để học hỏi sức mạnh từ Orochimaru, một quyết định định hình số phận của anh trong nhiều năm.",
+    symbol: { vi: "Âm ký", en: "Sound Mark" },
+    description: {
+      vi: "Otogakure là ngôi làng do Orochimaru thành lập sau khi rời Konoha. Ẩn náu trong nhiều hang động bí mật, đây là nơi Orochimaru thực hiện những thí nghiệm tàn bạo để truy cầu sự bất tử.",
+      en: "Otogakure is a village founded by Orochimaru after he left Konoha. Hidden within numerous secret caves, it is where Orochimaru conducted brutal experiments in his pursuit of immortality.",
+    },
+    history: {
+      vi: "Otogakure không phải là ngôi làng theo nghĩa truyền thống — nó là tổ chức do Orochimaru xây dựng với mục đích thu thập ninja mạnh cho thí nghiệm và chuẩn bị lực lượng xâm lược Konoha. Orochimaru đã chiêu mộ những cá nhân có tài năng đặc biệt bằng lời hứa về sức mạnh, trong đó có Kimimaro và nhóm Tứ Thanh Âm. Sasuke Uchiha cũng từng đến đây để học hỏi sức mạnh từ Orochimaru, một quyết định định hình số phận của anh trong nhiều năm.",
+      en: "Otogakure is not a village in the traditional sense — it is an organization Orochimaru built to gather powerful ninja for his experiments and to prepare forces to invade Konoha. Orochimaru recruited uniquely talented individuals with promises of power, including Kimimaro and the Sound Four. Sasuke Uchiha also came here to gain power from Orochimaru, a decision that shaped his fate for many years.",
+    },
     notableNinja: ["Orochimaru", "Kabuto Yakushi", "Kimimaro", "Sasuke Uchiha (tạm thời)"],
-    tags: ["Làng Phản Diện", "Orochimaru", "Thí Nghiệm"],
+    tags: [{ vi: "Làng Phản Diện", en: "Villain Village" }, { vi: "Orochimaru", en: "Orochimaru" }, { vi: "Thí Nghiệm", en: "Experiments" }],
   },
 ];

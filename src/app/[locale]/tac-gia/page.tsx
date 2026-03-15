@@ -21,6 +21,7 @@ export default async function AuthorPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("author");
+  const l = locale as "vi" | "en";
 
   return (
     <div className="space-y-10">
@@ -31,7 +32,7 @@ export default async function AuthorPage({
         </Badge>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{author.name}</h1>
         <p className="text-lg text-muted-foreground font-medium">{author.nameJP}</p>
-        <p className="max-w-2xl text-muted-foreground leading-relaxed">{author.description}</p>
+        <p className="max-w-2xl text-muted-foreground leading-relaxed">{author.description[l]}</p>
       </div>
 
       {/* Info Cards */}
@@ -44,7 +45,7 @@ export default async function AuthorPage({
             </div>
           </CardHeader>
           <CardContent>
-            <p className="font-semibold">{author.birthdate}</p>
+            <p className="font-semibold">{author.birthdate[l]}</p>
           </CardContent>
         </Card>
         <Card>
@@ -55,7 +56,7 @@ export default async function AuthorPage({
             </div>
           </CardHeader>
           <CardContent>
-            <p className="font-semibold">{author.birthplace}</p>
+            <p className="font-semibold">{author.birthplace[l]}</p>
           </CardContent>
         </Card>
       </div>
@@ -70,7 +71,7 @@ export default async function AuthorPage({
         <div className="space-y-4">
           {author.biography.map((paragraph, i) => (
             <p key={i} className="leading-relaxed text-muted-foreground">
-              {paragraph}
+              {paragraph[l]}
             </p>
           ))}
         </div>
@@ -87,7 +88,7 @@ export default async function AuthorPage({
           {author.works.map((work, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-amber-500" />
-              <span className="text-muted-foreground">{work}</span>
+              <span className="text-muted-foreground">{work[l]}</span>
             </li>
           ))}
         </ul>
@@ -103,7 +104,7 @@ export default async function AuthorPage({
         <div className="flex flex-wrap gap-2">
           {author.awards.map((award, i) => (
             <Badge key={i} variant="secondary" className="text-sm py-1.5 px-3">
-              {award}
+              {award[l]}
             </Badge>
           ))}
         </div>

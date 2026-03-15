@@ -28,13 +28,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const char = characters.find((c) => c.slug === slug);
   if (!char) return {};
-  return { title: char.name, description: char.description };
+  return { title: char.name, description: char.description.vi };
 }
 
 export default async function CharacterDetailPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("characterDetail");
+  const l = locale as "vi" | "en";
 
   const char = characters.find((c) => c.slug === slug);
   if (!char) notFound();
@@ -71,14 +72,14 @@ export default async function CharacterDetailPage({ params }: Props) {
               {status.label}
             </Badge>
             {char.tags.map((tag) => (
-              <Badge key={tag} variant="secondary" className="text-xs">
-                {tag}
+              <Badge key={tag.vi} variant="secondary" className="text-xs">
+                {tag[l]}
               </Badge>
             ))}
           </div>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{char.name}</h1>
           {char.nameJP && <p className="text-lg text-muted-foreground">{char.nameJP}</p>}
-          <p className="max-w-2xl text-muted-foreground leading-relaxed">{char.description}</p>
+          <p className="max-w-2xl text-muted-foreground leading-relaxed">{char.description[l]}</p>
         </div>
       </div>
 
@@ -103,7 +104,7 @@ export default async function CharacterDetailPage({ params }: Props) {
             </div>
           </CardHeader>
           <CardContent>
-            <p className="text-sm font-semibold leading-tight">{char.rank}</p>
+            <p className="text-sm font-semibold leading-tight">{char.rank[l]}</p>
           </CardContent>
         </Card>
         {char.clan && (
@@ -115,7 +116,7 @@ export default async function CharacterDetailPage({ params }: Props) {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm font-semibold leading-tight">{char.clan}</p>
+              <p className="text-sm font-semibold leading-tight">{char.clan?.[l]}</p>
             </CardContent>
           </Card>
         )}
@@ -128,7 +129,7 @@ export default async function CharacterDetailPage({ params }: Props) {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm font-semibold leading-tight">{char.dojutsu}</p>
+              <p className="text-sm font-semibold leading-tight">{char.dojutsu?.[l]}</p>
             </CardContent>
           </Card>
         )}
@@ -138,7 +139,7 @@ export default async function CharacterDetailPage({ params }: Props) {
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">{t("history")}</h2>
         <Separator />
-        <p className="leading-relaxed text-muted-foreground">{char.history}</p>
+        <p className="leading-relaxed text-muted-foreground">{char.history[l]}</p>
       </div>
 
       {/* Abilities */}
@@ -152,7 +153,7 @@ export default async function CharacterDetailPage({ params }: Props) {
           {char.abilities.map((ability, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-blue-500" />
-              <span className="text-muted-foreground">{ability}</span>
+              <span className="text-muted-foreground">{ability[l]}</span>
             </li>
           ))}
         </ul>

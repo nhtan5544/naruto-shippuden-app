@@ -21,6 +21,7 @@ export default async function VillagesPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("villages");
+  const l = locale as "vi" | "en";
 
   return (
     <div className="space-y-10">
@@ -45,8 +46,8 @@ export default async function VillagesPage({
                       <Map className="h-4 w-4 text-green-500" />
                     </div>
                     <div>
-                      <p className="text-xs text-muted-foreground">{village.country}</p>
-                      <p className="text-sm font-medium text-muted-foreground">{village.symbol}</p>
+                      <p className="text-xs text-muted-foreground">{village.country[l]}</p>
+                      <p className="text-sm font-medium text-muted-foreground">{village.symbol[l]}</p>
                     </div>
                   </div>
                   <Badge variant="outline" className="text-xs shrink-0">
@@ -54,13 +55,13 @@ export default async function VillagesPage({
                   </Badge>
                 </div>
                 <CardTitle className="text-lg leading-tight group-hover:text-green-500 transition-colors">
-                  {village.name}
+                  {village.name[l]}
                 </CardTitle>
                 {village.nameJP && (
                   <p className="text-sm text-muted-foreground">{village.nameJP}</p>
                 )}
                 <CardDescription className="leading-relaxed line-clamp-3">
-                  {village.description}
+                  {village.description[l]}
                 </CardDescription>
               </CardHeader>
               <CardContent className="pt-0">
@@ -84,9 +85,9 @@ export default async function VillagesPage({
                 </div>
                 <div className="flex flex-wrap gap-1.5 mt-3">
                   {village.tags.map((tag) => (
-                    <Badge key={tag} variant="outline" className="text-xs text-green-600 border-green-500/30">
+                    <Badge key={tag.vi} variant="outline" className="text-xs text-green-600 border-green-500/30">
                       <Shield className="h-2.5 w-2.5 mr-1" />
-                      {tag}
+                      {tag[l]}
                     </Badge>
                   ))}
                 </div>

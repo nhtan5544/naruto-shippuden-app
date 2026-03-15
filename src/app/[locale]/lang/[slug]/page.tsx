@@ -21,13 +21,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const village = villages.find((v) => v.slug === slug);
   if (!village) return {};
-  return { title: village.name, description: village.description };
+  return { title: village.name.vi, description: village.description.vi };
 }
 
 export default async function VillageDetailPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("villageDetail");
+  const l = locale as "vi" | "en";
 
   const village = villages.find((v) => v.slug === slug);
   if (!village) notFound();
@@ -43,18 +44,18 @@ export default async function VillageDetailPage({ params }: Props) {
       <div className="space-y-3">
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant="secondary" className="text-green-500 border-green-500/30 bg-green-500/10">
-            {village.country}
+            {village.country[l]}
           </Badge>
           <Badge variant="outline">{village.kage}</Badge>
           {village.tags.map((tag) => (
-            <Badge key={tag} variant="outline" className="text-xs">
-              {tag}
+            <Badge key={tag.vi} variant="outline" className="text-xs">
+              {tag[l]}
             </Badge>
           ))}
         </div>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{village.name}</h1>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{village.name[l]}</h1>
         {village.nameJP && <p className="text-lg text-muted-foreground">{village.nameJP}</p>}
-        <p className="max-w-2xl text-muted-foreground leading-relaxed">{village.description}</p>
+        <p className="max-w-2xl text-muted-foreground leading-relaxed">{village.description[l]}</p>
       </div>
 
       {/* Info Row */}
@@ -67,7 +68,7 @@ export default async function VillageDetailPage({ params }: Props) {
             </div>
           </CardHeader>
           <CardContent>
-            <p className="font-semibold">{village.country}</p>
+            <p className="font-semibold">{village.country[l]}</p>
           </CardContent>
         </Card>
         <Card>
@@ -98,7 +99,7 @@ export default async function VillageDetailPage({ params }: Props) {
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">{t("history")}</h2>
         <Separator />
-        <p className="leading-relaxed text-muted-foreground whitespace-pre-line">{village.history}</p>
+        <p className="leading-relaxed text-muted-foreground whitespace-pre-line">{village.history[l]}</p>
       </div>
 
       {/* Notable Ninja */}

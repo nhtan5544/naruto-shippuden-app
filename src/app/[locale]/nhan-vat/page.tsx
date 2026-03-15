@@ -22,6 +22,7 @@ export default async function CharactersPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("characters");
+  const l = locale as "vi" | "en";
 
   const statusConfig = {
     alive: { label: t("status.alive"), class: "text-green-500 border-green-500/30 bg-green-500/10" },
@@ -75,7 +76,7 @@ export default async function CharactersPage({
                     )}
                   </div>
                   <CardDescription className="leading-relaxed line-clamp-2 text-xs">
-                    {char.description}
+                    {char.description[l]}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0 space-y-2">
@@ -85,12 +86,12 @@ export default async function CharactersPage({
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
                     <Sword className="h-3.5 w-3.5 shrink-0" />
-                    <span className="truncate">{char.rank}</span>
+                    <span className="truncate">{char.rank[l]}</span>
                   </div>
                   <div className="flex flex-wrap gap-1 pt-1">
                     {char.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag} variant="secondary" className="text-xs">
-                        {tag}
+                      <Badge key={tag.vi} variant="secondary" className="text-xs">
+                        {tag[l]}
                       </Badge>
                     ))}
                     {char.tags.length > 3 && (

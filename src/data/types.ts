@@ -1,40 +1,42 @@
+export type LocalizedString = { vi: string; en: string };
+
 export interface Character {
   id: string;
   name: string;
   nameJP?: string;
   slug: string;
   village: string;
-  rank: string;
-  clan?: string;
+  rank: LocalizedString;
+  clan?: LocalizedString;
   kekkeiGenkai?: string;
-  dojutsu?: string;
-  description: string;
-  history: string;
-  abilities: string[];
+  dojutsu?: LocalizedString;
+  description: LocalizedString;
+  history: LocalizedString;
+  abilities: LocalizedString[];
   image?: string;
   birthdate?: string;
   age?: string;
   status: "alive" | "dead" | "unknown";
-  tags: string[];
+  tags: LocalizedString[];
 }
 
 export interface Village {
   id: string;
-  name: string;
+  name: LocalizedString;
   nameJP?: string;
   slug: string;
-  country: string;
+  country: LocalizedString;
   kage: string;
-  symbol: string;
-  description: string;
-  history: string;
+  symbol: LocalizedString;
+  description: LocalizedString;
+  history: LocalizedString;
   notableNinja: string[];
-  tags: string[];
+  tags: LocalizedString[];
 }
 
 export interface DojutsuAbility {
-  name: string;
-  description: string;
+  name: LocalizedString;
+  description: LocalizedString;
 }
 
 export interface Dojutsu {
@@ -42,12 +44,12 @@ export interface Dojutsu {
   name: string;
   nameJP?: string;
   slug: string;
-  clan: string;
+  clan: LocalizedString;
   tier: "common" | "rare" | "legendary";
-  description: string;
-  history: string;
+  description: LocalizedString;
+  history: LocalizedString;
   abilities: DojutsuAbility[];
-  users: string[];
+  users: LocalizedString[];
   color: string;
   image?: string;
 }
@@ -55,10 +57,10 @@ export interface Dojutsu {
 export interface Author {
   name: string;
   nameJP: string;
-  birthdate: string;
-  birthplace: string;
-  description: string;
-  biography: string[];
-  works: string[];
-  awards: string[];
+  birthdate: LocalizedString;
+  birthplace: LocalizedString;
+  description: LocalizedString;
+  biography: LocalizedString[];
+  works: LocalizedString[];
+  awards: LocalizedString[];
 }
